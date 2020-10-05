@@ -1,5 +1,5 @@
 # profile-page
-This is my own developer profile page that i created that contains all my details, it is hosted using Heroku
+This is my developer profile website that i created that contains all my details, it is hosted using Heroku
 
 You can use it as astandard template for your own site
 it contains componnts thaat include dynamic rating updating of codechef,hackerearth and codeforces rating,  responsive components setup for mobile view, smooth scroll to required section onn the page and user friendly layout.
