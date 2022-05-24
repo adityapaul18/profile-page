@@ -1,0 +1,51 @@
+/* ---- reset ---- */
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+ /* ---- particles.js container ---- */
+#particles-js {
+  width: 100%;
+  padding: 0 !important;
+  height: 100vh;
+  background-color: #2f2f2f;
+  background-color: #000000;
+} 
+
+.particles-js-canvas-el{
+  position: fixed;
+  top: 0;
+  z-index: 1 !important;
+}
+
+/* langing page inner CSS */
+
+.landingPageContainer{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  color: white;
+  font-size:100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  position: relative;
+  z-index: 5 !important;
+}
+
+.LandingSkills{
+  /* padding-top: 20px; */
+  font-size: 40px;
+}
+
+.nerdy-pen {
+  text-align:center;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
