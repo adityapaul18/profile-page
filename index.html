@@ -47,12 +47,48 @@
         </div>
     </div>
     <div id="2" class="aboutMeSection">
-        <div>
-            <div class="aboutMeSectionInner">
+        <div class="aboutMeSectionIndiv">
+            <div class="hidden aboutMeSectionInner">
                 <div class="aboutSectionHeading">About Me</div>
             </div>
             <div class="aboutInfoContainer">
-                <div class="aboutMeInfo">
+                <div class="hidden2 aboutMeInfo">
+                    <h1>
+                        I'm Computer Science Undergraduate from IIIT Surat
+                    </h1>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vero magni quibusdam
+                    necessitatibus cumque pariatur obcaecati dignissimos, velit ad error eveniet, totam nisi voluptas
+                    non
+                    sint magnam optio. Quidem dolor ipsam numquam rerum deserunt vel, repudiandae ab. Nihil accusamus
+                    inventore provident dolorem, aspernatur facilis, atque voluptates libero dicta laboriosam sequi
+                    labore
+                    quis harum aliquam nam quas esse porro nesciunt a saepe quasi, dolor exercitationem. Molestias
+                    deleniti
+                    maxime illum. Voluptates sapiente nihil quis! Iste necessitatibus doloribus odio corrupti doloremque
+                    facilis molestias expedita, illum dolores reprehenderit similique qui temporibus voluptate tempora
+                    dolore sed provident esse nisi harum culpa dolor voluptatibus rem excepturi!
+                </div>
+                <div class="aboutImgCont  hidden3">
+                    <img class="aboutImg" src="./assets/me.png" alt="" />
+                </div>
+
+            </div>
+            <div class="hidden2 aboutMeSectionInner skillBTN">
+                <a href="#3">
+                <button class="glassTray">
+                        My Skills
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="3" class="aboutMeSection">
+        <div class="aboutMeSectionIndiv">
+            <div class="hidden aboutMeSectionInner">
+                <div class="aboutSectionHeading">My Skills</div>
+            </div>
+            <div class="aboutInfoContainer">
+                <div class="hidden3 aboutMeInfo">
                     <h1>
                         I'm Computer Science Undergraduate from IIIT Surat
                     </h1>
@@ -69,21 +105,70 @@
                     dolore sed provident esse nisi harum culpa dolor voluptatibus rem excepturi!
                 </div>
                 <div class="aboutImgCont">
-                    <img class="aboutImg" src="./assets/me.png" alt="" />
+                    <!-- <img class="aboutImg" src="./assets/me.png" alt="" /> -->
                 </div>
 
             </div>
             <div class="aboutMeSectionInner skillBTN">
                 <button class="glassTray">
-                    About Me
+                    My Experience
                 </button>
             </div>
         </div>
     </div>
+    <div id="3" class="aboutMeSection">
+</div>
+
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="./particle.js"></script>
     <script src="./text.js"></script>
+    <script>
+        // window.onscroll = function () { myFunction() };
+        function myFunction() {
+            var elements;
+            var elements2;
+            var elements3;
+            var windowHeight;
+
+            function init() {
+                elements = document.querySelectorAll('.hidden');
+                elements2 = document.querySelectorAll('.hidden2');
+                elements3 = document.querySelectorAll('.hidden3');
+                windowHeight = window.innerHeight;
+            }
+
+            function checkPosition() {
+                for (var i = 0; i < elements.length; i++) {
+                    var element1 = elements[i];
+                    var element2 = elements2[i];
+                    var element3 = elements3[i];
+                    var positionFromTop = elements[i].getBoundingClientRect().top;
+                    var positionFromTop2 = elements2[i].getBoundingClientRect().top;
+
+                    if (positionFromTop - windowHeight <= 0) {
+                        element1.classList.add('fade-in-element');
+                        element1.classList.remove('hidden');
+                    }
+                    if (positionFromTop2 - windowHeight <= 0) {
+                        element2.classList.add('fade-in-element2');
+                        element2.classList.remove('hidden2');
+                        element3.classList.add('fade-in-element3');
+                        element3.classList.remove('hidden3');
+                    }
+                }
+            }
+
+            window.addEventListener('scroll', checkPosition);
+            window.addEventListener('resize', init);
+
+            init();
+            checkPosition();
+        }
+        // window.addEventListener('scroll', myFunction);
+        myFunction()
+
+    </script>
 </body>
 
 </html>
