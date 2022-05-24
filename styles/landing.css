@@ -67,7 +67,7 @@ canvas {
 .bottomTray {
   width: fit-content;
   margin: 0 auto;
-  position: fixed;
+  position: absolute;
   bottom: 50px;
   display: flex;
   justify-content: center;
@@ -85,12 +85,12 @@ canvas {
   backdrop-filter: blur(10.7px);
   -webkit-backdrop-filter: blur(10.7px);
   border: 1px solid rgba(207, 207, 207, 0.32);
-  color: yellow;
+  color: #21F7C0;
   transition-duration: .5s;
 }
 
 .glassTray:hover{
-    background-color: yellow;
+    background-color: #21F7C0;
     color: black;
     transition-duration: .5s;
 }
