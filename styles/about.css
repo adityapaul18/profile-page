@@ -1,0 +1,67 @@
+.aboutMeSection{
+    height: 100vh;
+    background-color: rgb(33, 33, 33);
+    position: relative;
+    z-index: 2;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.aboutMeSection > div{
+    margin: auto;
+}
+
+.aboutMeSectionInner{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.aboutSectionHeading{
+    font-family: Exo , Bold Italic;
+    width: fit-content;
+    color: #21F7C0;
+    font-size: 50px;
+    /* padding: 50px 20px 20px 0px; */
+    border-bottom: 5px solid #21F7C0;
+    text-align: left;
+}
+
+.aboutInfoContainer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    color: white;
+    align-items: center;
+}
+
+.aboutMeInfo{
+    width: 50%;
+    padding-top: 20px ;
+    font-size: 20px;
+}
+
+.aboutImgCont{
+    width: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    /* width: fit-content; */
+    
+}
+
+.aboutImg{
+    padding: 15px;
+    border: #21F7C0 dotted 5px;
+    border-radius: 50%;
+    width: 400px;
+    height: auto;
+    margin: auto;
+}
+
+.skillBTN{
+    margin-top: 30px ;
+}
