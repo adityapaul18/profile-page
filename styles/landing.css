@@ -73,32 +73,36 @@ canvas {
   justify-content: center;
   width: 100%;
 }
-.glassTray{
+.glassTray {
   margin: auto;
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
-  padding: 15px;
+  padding: 12px 15px;
   background: rgba(207, 207, 207, 0.35);
-  border-radius: 10px ;
+  border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10.7px);
   -webkit-backdrop-filter: blur(10.7px);
   border: 1px solid rgba(207, 207, 207, 0.32);
-  color: #21F7C0;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
-
-.glassTray:hover{
-    background-color: #21F7C0;
-    color: black;
-    transition-duration: .5s;
+.glassTray {
+  text-decoration: none;
+  color: #21f7c0;
+}
+.glassTray:hover {
+  background-color: #21f7c0;
+  color: black;
+  transition-duration: 0.5s;
+}
+a{
+  text-decoration: none;
 }
 
 @keyframes change {
   0% {
   }
   100% {
-    
   }
 }

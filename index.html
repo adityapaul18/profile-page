@@ -8,10 +8,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/landing.css">
     <link rel="stylesheet" href="styles/about.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+            /* Firefox */
+        }
+    </style>
 </head>
 
 <body>
-    
+
     <!-- LANDING SECTION -->
     <div id="particles-js">
         <!-- particles.js container -->
@@ -31,14 +38,47 @@
                 </div>
             </div>
             <div class="bottomTray">
-                <div class="glassTray">
-                    About Me
-                </div>
+                <a href="#2">
+                    <div class="glassTray">
+                        About Me
+                    </div>
+                </a>
             </div>
         </div>
     </div>
-    <div class="aboutMeSection">
+    <div id="2" class="aboutMeSection">
+        <div>
+            <div class="aboutMeSectionInner">
+                <div class="aboutSectionHeading">About Me</div>
+            </div>
+            <div class="aboutInfoContainer">
+                <div class="aboutMeInfo">
+                    <h1>
+                        I'm Computer Science Undergraduate from IIIT Surat
+                    </h1>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vero magni quibusdam
+                    necessitatibus cumque pariatur obcaecati dignissimos, velit ad error eveniet, totam nisi voluptas
+                    non
+                    sint magnam optio. Quidem dolor ipsam numquam rerum deserunt vel, repudiandae ab. Nihil accusamus
+                    inventore provident dolorem, aspernatur facilis, atque voluptates libero dicta laboriosam sequi
+                    labore
+                    quis harum aliquam nam quas esse porro nesciunt a saepe quasi, dolor exercitationem. Molestias
+                    deleniti
+                    maxime illum. Voluptates sapiente nihil quis! Iste necessitatibus doloribus odio corrupti doloremque
+                    facilis molestias expedita, illum dolores reprehenderit similique qui temporibus voluptate tempora
+                    dolore sed provident esse nisi harum culpa dolor voluptatibus rem excepturi!
+                </div>
+                <div class="aboutImgCont">
+                    <img class="aboutImg" src="./assets/me.png" alt="" />
+                </div>
 
+            </div>
+            <div class="aboutMeSectionInner skillBTN">
+                <button class="glassTray">
+                    About Me
+                </button>
+            </div>
+        </div>
     </div>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
