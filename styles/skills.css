@@ -8,8 +8,9 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
-.SkillSection > div {
+.aboutMeSectionIndiv{
   margin: auto;
+  width: 100%;
   /* animation: 1s ease-out 0s 1 fadeIn; */
 }
 
@@ -34,8 +35,9 @@ a {
 
 .skillInfoContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   max-width: 1300px;
+  width: 100%;
   margin: 0 auto;
   color: white;
   align-items: center;
@@ -43,7 +45,7 @@ a {
 
 .skillInfo {
   margin-top: -70px;
-  width: 50%;
+  width: fit-content;
   padding-top: 20px;
   font-size: 13px;
 }
@@ -81,7 +83,8 @@ a {
 }
 
 .expBTN {
-  /* margin-top: 30px; */
+  max-width: 1300px;
+  margin: auto;
 }
 
 .skillIcons {

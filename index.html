@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/landing.css">
     <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/timeline.css">
     <style>
         html {
             scroll-behavior: smooth;
@@ -150,20 +151,67 @@
                 <div class="skillImgCont">
                     <img width="600px" src="./assets/skill4.png" alt="" />
                     <div>
-                        <img class="hidden2" width="450px" style="margin-top: -100px; margin-left: 200px;" src="./assets/thunder2.png" alt="" />
+                        <img class="hidden2" width="450px" style="margin-top: -100px; margin-left: 200px;"
+                            src="./assets/thunder2.png" alt="" />
                     </div>
                 </div>
 
             </div>
             <div class=" hidden4 expBTN">
-                <button class="glassTray">
-                    My Experience
-                </button>
+                <a href="#4">
+                    <button class="glassTray">
+                        My Experience
+                    </button>
+                </a>
             </div>
         </div>
     </div>
-    <div id="3" class="aboutMeSection">
+    <div id="4" class="timelineSection">
+        <div class="timeline">
+            <ul>
+                <li>
+                    <span>3rd January 2020</span>
+                    <div class="content">
+                        <h3>What Is Lorem Ipsum?</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <span>21st Jun 2019</span>
+                    <div class="content">
+                        <h3>What Is Lorem Ipsum?</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <span>15th April 2018</span>
+                    <div class="content">
+                        <h3>What Is Lorem Ipsum?</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <span>22nd Mars 2017</span>
+                    <div class="content">
+                        <h3>What Is Lorem Ipsum?</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
+
+
 
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
@@ -208,21 +256,15 @@
                         element4.classList.add('fade-in-element4');
                         element4.classList.remove('hidden4');
                     }
-                    // if (positionFromTop3 - windowHeight <= 0) {
-                    //     element2.classList.add('fade-in-element2');
-                    //     element2.classList.remove('hidden2');
-                    //     element3.classList.add('fade-in-element3');
-                    //     element3.classList.remove('hidden3');
-                    // }
                 }
             }
 
-            function checkPosition2(){
+            function checkPosition2() {
                 for (var i = 0; i < elements4.length; i++) {
                     var positionFromTop4 = elements4[i].getBoundingClientRect().top;
 
                     if (positionFromTo4 - windowHeight <= 0) {
-                        
+
                     }
                 }
             }
