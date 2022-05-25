@@ -1,6 +1,6 @@
 .SkillSection {
   height: 100vh;
-  background-color: rgb(33, 33, 33);
+  background-color: #212121;
   position: relative;
   z-index: 2;
   padding: 0 50px;
@@ -42,20 +42,26 @@ a {
 }
 
 .skillInfo {
+  margin-top: -70px;
   width: 50%;
   padding-top: 20px;
-  font-size: 15px;
+  font-size: 13px;
 }
-.SkillName{
+
+.SkillName {
     text-align: center;
 }
-.SkillIcon{
-    width: 50px;
-    height: auto;
+.SkillIcon {
+    display: flex;
+    margin: auto;
+    width: auto;
+    height: 45px;
+    padding-bottom: 10px;
 }
 
 .skillImgCont {
   padding: 50px;
+  padding-bottom: 20px;
   /* width: fit-content; */
 }
 
@@ -68,16 +74,16 @@ a {
   margin: auto;
 }
 
-.skillBTN {
-  margin-top: 30px;
+.expBTN {
+  /* margin-top: 30px; */
 }
 
-.skillIcons{
-    display: flex;
+.skillIcons {
+  display: flex;
 }
 
-.skillbox{
-    padding-right:10px;
+.skillbox {
+  padding-right: 15px;
 }
 
 .fade-in-element {
