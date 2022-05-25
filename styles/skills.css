@@ -46,6 +46,13 @@ a {
   padding-top: 20px;
   font-size: 15px;
 }
+.SkillName{
+    text-align: center;
+}
+.SkillIcon{
+    width: 50px;
+    height: auto;
+}
 
 .skillImgCont {
   padding: 50px;
@@ -70,7 +77,7 @@ a {
 }
 
 .skillbox{
-    padding: 0 10px;
+    padding-right:10px;
 }
 
 .fade-in-element {
