@@ -48,15 +48,19 @@ a {
   font-size: 13px;
 }
 
+.skillInfo > h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 .SkillName {
-    text-align: center;
+  text-align: center;
 }
 .SkillIcon {
-    display: flex;
-    margin: auto;
-    width: auto;
-    height: 45px;
-    padding-bottom: 10px;
+  display: flex;
+  margin: auto;
+  width: auto;
+  height: 45px;
+  padding-bottom: 10px;
 }
 
 .skillImgCont {
@@ -109,13 +113,18 @@ a {
 .hidden3 {
   opacity: 0;
 }
-
+.hidden4 {
+  opacity: 0;
+}
 .fade-in-element2 {
   animation: fadeIn2 1s;
 }
 
 .fade-in-element3 {
   animation: fadeIn3 1s;
+}
+.fade-in-element4 {
+  animation: fadeIn4 1s;
 }
 
 @keyframes fadeIn {
@@ -155,6 +164,19 @@ a {
     transform: translateX(0px);
   }
 }
+
+@keyframes fadeIn4 {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+      transform: translateX(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+      transform: translateX(0px);
+    }
+  }
 
 .flexrev {
   display: flex;
