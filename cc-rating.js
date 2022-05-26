@@ -1,20 +1,27 @@
-var y=document.getElementById("gg")
+// function to validate form
 
-async function fetchCF()
-{
-    res=await fetch('https://cors-anywhere.herokuapp.com/www.codechef.com/users/the_mrx18');
-    src=await res.text();
-    var dom= new DOMParser;
-    srcdom=dom.parseFromString(src,'text/html')
-    name=srcdom.querySelector('body > main > div > div > div > div > div > header > h2').innerHTML;
-    rating=srcdom.querySelector('.rating-number').innerHTML;
-    console.log(name+'  '+rating);
+function validate(){
+    var form = document.getElementById('ratingForm');
+    var rating = document.getElementById('rating');
+    var comment = document.getElementById('comment');
+    var error = document.getElementById('error');
+    var errorMsg = "";
+    var ratingValue = rating.value;
+    var commentValue = comment.value;
     
-    y.innerHTML=rating;
-
+    if(ratingValue == ""){
+        errorMsg += "Please enter a rating.\n";
+    }
+    
+    if(commentValue == ""){
+        errorMsg += "Please enter a comment.\n";
+    }
+    
+    if(errorMsg != ""){
+        error.innerHTML = errorMsg;
+        return false;
+    }else{
+        form.submit();
+        return true;
+    }
 }
-
-fetchCF();
-
-
-
