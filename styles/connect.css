@@ -26,22 +26,68 @@
   align-items: center;
 }
 
-.ContactInputContainer{
-    width: 90%;
-    height: 30vh;
-    margin: 25px 0;
-    border-radius: 12px;
-    color: white;
-    padding: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    outline: none;
-    border: #828282 solid 1px;
-    background-color: #404040;
+.ContactInputContainer {
+  width: 90%;
+  height: 40vh;
+  margin: 25px 0;
+  border-radius: 12px;
+  color: white;
+  padding: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  outline: none;
+  border: #828282 solid 1px;
+  background-color: #404040;
+  transition: 1s;
+}
+
+.ContactInputContainer:hover{
+    box-shadow: 0px 0px 25px 5px #2bd6ac ;
+    transition: 1s;
+}
+
+.ContactInputContainer:focus{
+    box-shadow: 0px 0px 25px 5px #2bd6ac ;
+    transition: 1s;
 }
 
 .ContactBox {
-    width: 50%;
-    padding-top: 20px;
-    font-size: 20px;
-  }
+  width: 50%;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.footerTray {
+  display: flex;
+  width: 100%;
+  max-width: 1300px;
+  margin: 20px auto;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.contactWay {
+  color: #21f7c0;
+  font-size: 22px;
+  font-weight: 600;
+  border-bottom: #21f7c0 solid 2px;
+  width: fit-content;
+  margin-bottom: 15px;
+}
+
+.contactLink {
+  font-size: 18px;
+  font-weight: 600;
+  transition: 1s;
+
+}
+
+.contactLink > a {
+  text-decoration: none;
+  color: white;
+}
+
+.contactLink:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}

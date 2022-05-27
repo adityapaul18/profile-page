@@ -71,7 +71,7 @@ $desktop: 1024px;
 			width: 100%;
 			height: 100%;
 			background: linear-gradient(0deg, rgba(0, 0, 0, 0.711) 40%, rgba(255, 255 ,255 , 0) 100%);
-			transition: .3s;
+			transition: .6s;
 			
 			@include breakpoint(desktop) {
 				top: calc(100% - 140px);
@@ -80,7 +80,7 @@ $desktop: 1024px;
 	}
 	
 	&__image {
-		transition: .5s ease-in-out;
+		transition: 1s ease-in-out;
 	}
 	
 	&__caption {
@@ -91,7 +91,7 @@ $desktop: 1024px;
 		color: white;
 		transform: translateY(-50%);
 		text-align: center;
-		transition: .3s;
+		transition: .6s;
 
 		@include breakpoint(desktop) {
 			top: calc(100% - 110px);
@@ -121,7 +121,7 @@ $desktop: 1024px;
 		font-size: 16px;
 		line-height: 20px;
 		text-overflow: ellipsis;
-		transition: .5s ease-in-out;
+		transition: 1s ease-in-out;
     -webkit-line-clamp: 5;
 		-webkit-box-orient: vertical;
 		
@@ -139,7 +139,7 @@ $desktop: 1024px;
 		font-size: 12px;
 		text-transform: uppercase;
 		text-decoration: none;
-		transition: .3s;
+		transition: .6s;
 
 		&:hover {
 			color: black;
