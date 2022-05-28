@@ -115,6 +115,11 @@ a {
     font-weight: 700;
   }
 
+  .landingPageContainer > div{
+    width: 95%;
+    margin: auto;
+  }
+
   .LandingSkills {
     font-size: 13px;
   }
@@ -131,5 +136,7 @@ a {
 .bottomTray {
   position: absolute;
   bottom: 120px;
+  width: 95%;
+  margin: auto;
 }
 }
