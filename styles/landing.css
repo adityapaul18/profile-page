@@ -126,4 +126,9 @@ a {
     font-weight: 600;
     padding: 8px;
   }
+
+.bottomTray {
+  position: absolute;
+  bottom: 120px;
+}
 }

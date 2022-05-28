@@ -87,7 +87,9 @@ a{
 
 @media (max-width: 400px) {
   .aboutMeSection {
-    padding: 0;
+    min-height: 100vh;
+    height: fit-content;
+    padding: 20px 0;
   }
   .aboutMeSectionInner {
     width: 100%;
@@ -110,13 +112,20 @@ a{
     font-size: 15px;
     padding: 0;
   }
+  .aboutMeInfo > h1 {
+    font-size: 25px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
   .aboutImgCont {
     width: 100%;
+    margin: 15px;
   }
   .aboutImg {
-    width: 40%;
+    width: 35%;
     height: auto;
-    padding: 7px;
+    padding: 5px;
+    border: #21f7c0 solid 2px;
   }
   .skillBTN {
     margin-top: 20px;
