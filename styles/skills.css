@@ -146,6 +146,7 @@ a {
   .expBTN {
     width: 90%;
     margin: auto;
+    margin-top: 20px;
   }
   .skillStaticImage {
     width: 90%;

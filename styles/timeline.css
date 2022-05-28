@@ -102,3 +102,32 @@
 .timelineImage {
   width: 400px;
 }
+
+@media (max-width: 400px){
+  .timelineSection{
+    min-height: 100vh;
+    padding:40px 0;
+    height: fit-content;
+  }
+  .timeline {
+    color: #fff;
+    padding: 10px 5px;
+    padding-bottom: 0;
+  }
+
+  .timelineImgCont {
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  .timelineImage {
+    width: 60%;
+    margin: auto;
+  }
+
+  .prBTN{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
