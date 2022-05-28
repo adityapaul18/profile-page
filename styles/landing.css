@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font: normal 75% Arial, Helvetica, sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 canvas {
   display: block;
