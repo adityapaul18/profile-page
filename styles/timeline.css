@@ -16,6 +16,10 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
+
+.expInfo{
+  margin-top: 0;
+}
 .timeline {
   max-width: 1200px;
   /* background-color:#072736; */
