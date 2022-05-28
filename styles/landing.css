@@ -38,6 +38,7 @@ canvas {
   position: relative;
   z-index: 5 !important;
   animation: 1s ease-out 0s 1 fadeIn;
+  overflow-x: hidden;
 }
 
 .LandingSkills {
@@ -116,8 +117,8 @@ a {
   }
 
   .landingPageContainer > div{
-    width: 90%;
-    margin: auto;
+    /* width: 90%;
+    margin: auto; */
   }
 
   .LandingSkills {
@@ -136,7 +137,8 @@ a {
 .bottomTray {
   position: absolute;
   bottom: 120px;
-  width: 95%;
+  display: flex;
+  width: 100%;
   margin: auto;
 }
 }
