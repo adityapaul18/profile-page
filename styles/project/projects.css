@@ -186,4 +186,15 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+@media (max-width: 400px) {
+  .container {
+    width: 90%;
+    margin: auto;
+    min-height: 100vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
 /*# sourceMappingURL=projects.css.map */

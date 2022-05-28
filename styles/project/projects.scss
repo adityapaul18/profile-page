@@ -165,3 +165,13 @@ $desktop: 1024px;
 	align-items: center;
 
 }
+
+@media (max-width: 400px){
+	.container{
+		width: 90%;
+		margin: auto;
+		min-height: 100vh;
+		height: fit-content;
+
+	}
+}

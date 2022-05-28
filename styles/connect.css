@@ -26,6 +26,21 @@
   align-items: center;
 }
 
+.connectSectionInner {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.connectSectionHeading {
+  width: fit-content;
+  color: #21f7c0;
+  font-size: 50px;
+  border-bottom: 5px solid #21f7c0;
+  text-align: left;
+  font-weight: 600;
+}
+
 .ContactInputContainer {
   width: 90%;
   height: 40vh;
@@ -41,14 +56,14 @@
   transition: 1s;
 }
 
-.ContactInputContainer:hover{
-    box-shadow: 0px 0px 25px 5px #2bd6ac ;
-    transition: 1s;
+.ContactInputContainer:hover {
+  box-shadow: 0px 0px 25px 5px #2bd6ac;
+  transition: 1s;
 }
 
-.ContactInputContainer:focus{
-    box-shadow: 0px 0px 25px 5px #2bd6ac ;
-    transition: 1s;
+.ContactInputContainer:focus {
+  box-shadow: 0px 0px 25px 5px #2bd6ac;
+  transition: 1s;
 }
 
 .ContactBox {
@@ -79,7 +94,6 @@
   font-size: 18px;
   font-weight: 600;
   transition: 1s;
-
 }
 
 .contactLink > a {
@@ -88,6 +102,52 @@
 }
 
 .contactLink:hover {
-    transform: scale(1.1);
-    transition: 1s;
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+@media (max-width: 1000px) {
+  .contactSection {
+    min-height: 100vh;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: fit-content;
+  }
+  .connectSectionHeading {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 3px solid #21f7c0;
+    font-weight: 800;
+  }
+  .connectSectionInner {
+    width: 90%;
+    margin: auto;
+  }
+  .connectboxContainer {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .ContactBox{
+    width: 100%;
+  }
+  .ContactInputContainer{
+    width: 85%;
+    display: flex;
+    margin: auto;
+  }
+  .connectImgCont{
+    padding:0;
+    padding-top: 30px;
+    display: flex;
+    margin: auto;
+  }
+
+  .connectImage{
+    width: 90%;
+    height: auto;
+  }
 }
