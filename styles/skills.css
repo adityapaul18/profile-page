@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
-.aboutMeSectionIndiv{
+.SkillSectionIndiv{
   margin: auto;
   width: 100%;
   /* animation: 1s ease-out 0s 1 fadeIn; */
@@ -71,15 +71,6 @@ a {
   margin-left: -50px;
   margin-right: 50px;
   /* width: fit-content; */
-}
-
-.aboutImg {
-  padding: 15px;
-  border: #21f7c0 dotted 5px;
-  border-radius: 50%;
-  width: 400px;
-  height: auto;
-  margin: auto;
 }
 
 .expBTN {

@@ -96,7 +96,7 @@ canvas {
   color: black;
   transition-duration: 0.5s;
 }
-a{
+a {
   text-decoration: none;
 }
 
@@ -104,5 +104,26 @@ a{
   0% {
   }
   100% {
+  }
+}
+
+@media (max-width: 400px) {
+  .landingPageContainer {
+    font-size: 43px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+  }
+
+  .LandingSkills {
+    font-size: 13px;
+  }
+
+  .nerdy-pen {
+    width: 90%;
+  }
+  .glassTray {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px;
   }
 }

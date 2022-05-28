@@ -77,3 +77,48 @@ a{
   display: flex;
   flex-direction: row-reverse;
 }
+
+@media(max-width:400px){
+  .hidediv > *{
+    display: none;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .aboutMeSection {
+    padding: 0;
+  }
+  .aboutMeSectionInner {
+    width: 100%;
+  }
+  .aboutSectionHeading {
+    font-size: 30px;
+    font-weight: 300;
+    border-bottom: 3px solid #21f7c0;
+  }
+  .aboutInfoContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .aboutMeSectionIndiv{
+    width: 90%;
+    margin: auto;
+  }
+  .aboutMeInfo {
+    width: 100%;
+    font-size: 15px;
+    padding: 0;
+  }
+  .aboutImgCont {
+    width: 100%;
+  }
+  .aboutImg {
+    width: 40%;
+    height: auto;
+    padding: 7px;
+  }
+  .skillBTN {
+    margin-top: 20px;
+  }
+}

@@ -1,5 +1,5 @@
 <?php
 
-include_once("profile.html");
+include_once("index.html");
 
 ?>
