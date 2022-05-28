@@ -7,7 +7,7 @@ body {
 canvas {
   display: block;
   vertical-align: bottom;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 /* ---- particles.js container ---- */
 #particles-js {
@@ -118,7 +118,7 @@ a {
     font-weight: 700;
   }
 
-  .landingPageContainer > div{
+  .landingPageContainer > div {
     /* width: 90%;
     margin: auto; */
   }
@@ -136,11 +136,26 @@ a {
     padding: 8px;
   }
 
-.bottomTray {
-  position: absolute;
-  bottom: 120px;
-  display: flex;
-  width: 100%;
-  margin: auto;
+  .bottomTray {
+    position: absolute;
+    bottom: 120px;
+    display: flex;
+    width: 100%;
+    margin: auto;
+  }
 }
+
+.snapper{
+  /* overflow-y: auto; */
+  scroll-snap-type: y mandatory;
+}
+
+.snapper >  div{
+  scroll-snap-align: start;
+}
+
+@media (max-width: 400px) {
+  .snapper{
+    scroll-snap-type: none;
+  }
 }
