@@ -85,7 +85,7 @@ a{
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 900px) {
   .aboutMeSection {
     min-height: 100vh;
     height: fit-content;
