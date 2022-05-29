@@ -131,7 +131,7 @@ a {
   }
   .skillInfo {
     margin-top: 0px;
-    width: 90%;
+    width: 125%;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 10px;
@@ -149,13 +149,13 @@ a {
     margin-top: 20px;
   }
   .skillStaticImage {
-    width: 90%;
+    width: 60%;
     margin: auto;
     display: flex;
   }
 
   .skillMovImage {
-    width: 90%;
+    width: 60%;
     margin: auto;
     display: flex;
     margin-top: -50px;
@@ -168,4 +168,24 @@ a {
     flex-direction: column;
     align-items: center;
   }
+  .skillStaticImage {
+    width: 90%;
+    margin: auto;
+    display: flex;
+  }
+
+  .skillMovImage {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: -50px;
+    margin-left: 80px;
+  }
+  .skillInfo {
+    margin-top: 0px;
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 10px;
+  } 
 }
