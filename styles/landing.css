@@ -138,7 +138,7 @@ a {
 
   .bottomTray {
     position: absolute;
-    bottom: 120px;
+    bottom: 15%;
     display: flex;
     width: 100%;
     margin: auto;
