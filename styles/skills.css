@@ -191,4 +191,10 @@ a {
     padding-bottom: 10px;
     font-size: 10px;
   } 
+  .skillImgCont{
+    padding: 0;
+    padding-top: 30px;
+    width: 90%;
+    /* margin: a; */
+  }
 }
