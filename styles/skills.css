@@ -170,6 +170,7 @@ a {
   .skillInfoContainer {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   .skillStaticImage {
     width: 90%;
@@ -194,7 +195,7 @@ a {
   .skillImgCont{
     padding: 0;
     padding-top: 30px;
-    width: 90%;
+    width: 80%;
     /* margin: a; */
   }
 }
