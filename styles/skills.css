@@ -116,8 +116,10 @@ a {
     border-bottom: 3px solid #21f7c0;
   }
   .skillInfoContainer {
+    flex-direction: row ;
     /* flex-direction: column; */
     align-items: center;
+    width: 90%;
   }
   .skillSectionInner {
     width: 90%;
@@ -128,10 +130,11 @@ a {
     padding-bottom: 20px;
     margin-left: -50px;
     margin-right: 25px;
+    width: 50%;
   }
   .skillInfo {
     margin-top: 0px;
-    width: 125%;
+    width: 50%;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 10px;
@@ -159,7 +162,7 @@ a {
     margin: auto;
     display: flex;
     margin-top: -50px;
-    margin-left: 80px;
+    margin-left:120px;
   }
 }
 @media (max-width: 750px) {
