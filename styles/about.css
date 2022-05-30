@@ -93,6 +93,7 @@ a{
   }
   .aboutMeSectionInner {
     width: 100%;
+    margin-bottom: 15px;
   }
   .aboutSectionHeading {
     font-size: 30px;
@@ -100,7 +101,7 @@ a{
     border-bottom: 3px solid #21f7c0;
   }
   .aboutInfoContainer {
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
     align-items: center;
   }
   .aboutMeSectionIndiv{
@@ -118,16 +119,31 @@ a{
     margin-bottom: 10px;
   }
   .aboutImgCont {
-    width: 100%;
+    width: fit-content;
     margin: 15px;
   }
   .aboutImg {
-    width: 35%;
+    width: 65%;
     height: auto;
     padding: 5px;
     border: #21f7c0 solid 2px;
   }
   .skillBTN {
     margin-top: 20px;
+  }
+
+  .hidebtns {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .aboutInfoContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .aboutMeSectionInner {
+    width: 100%;
+    margin-bottom: 0px;
   }
 }
