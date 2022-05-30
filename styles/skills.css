@@ -152,17 +152,17 @@ a {
     margin-top: 20px;
   }
   .skillStaticImage {
-    width: 60%;
+    width: 95%;
     margin: auto;
     display: flex;
   }
 
   .skillMovImage {
-    width: 60%;
+    width: 95%;
     margin: auto;
     display: flex;
     margin-top: -50px;
-    margin-left:120px;
+    margin-left:90px;
   }
 }
 @media (max-width: 750px) {
