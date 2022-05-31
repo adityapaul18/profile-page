@@ -55,11 +55,11 @@
 
         <div id="2" class="aboutMeSection">
             <div class="aboutMeSectionIndiv">
-                <div class="tr3 aboutMeSectionInner">
+                <div class="hidden aboutMeSectionInner">
                     <div class="aboutSectionHeading">About Me</div>
                 </div>
                 <div class="aboutInfoContainer">
-                    <div class="tr2 aboutMeInfo">
+                    <div class="hidden2 aboutMeInfo">
                         <h1>
                             I'm Computer Science Undergraduate from IIIT Surat
                         </h1>
@@ -79,12 +79,12 @@
                         tempora
                         dolore sed provident esse nisi harum culpa dolor voluptatibus rem excepturi!
                     </div>
-                    <div class="aboutImgCont  tr1">
+                    <div class="aboutImgCont  hidden3">
                         <img class="aboutImg" src="./assets/me.png" alt="" />
                     </div>
 
                 </div>
-                <div class=" tr1 aboutMeSectionInner skillBTN">
+                <div class=" hidden4 aboutMeSectionInner skillBTN">
                     <a href="#3">
                         <button class="hidebtns glassTray">
                             My Skills
@@ -97,10 +97,10 @@
         <div id="3" class="SkillSection">
             <div class="SkillSectionIndiv">
                 <div class="skillSectionInner">
-                    <div class="tr3 skillSectionHeading">My Skills</div>
+                    <div class="hidden skillSectionHeading">My Skills</div>
                 </div>
                 <div class="skillInfoContainer flexrev">
-                    <div class="tr1 skillInfo">
+                    <div class="hidden3 skillInfo">
                         <h1>
                             Programming Languages
                         </h1>
@@ -163,12 +163,12 @@
                     <div class="skillImgCont">
                         <img class="skillStaticImage" src="./assets/skill4.png" alt="" />
                         <div>
-                            <img class="tr2 skillMovImage" src="./assets/thunder2.png" alt="" />
+                            <img class="hidden2 skillMovImage" src="./assets/thunder2.png" alt="" />
                         </div>
                     </div>
 
                 </div>
-                <div class=" tr1 expBTN">
+                <div class=" hidden4 expBTN">
                     <a href="#4">
                         <button class="hidebtns glassTray">
                             My Experience
@@ -180,11 +180,11 @@
 
         <div id="4" class=" timelineSection">
             <div class="timelineSectionIndiv">
-                <div class="tr3 skillSectionInner ">
+                <div class="hidden skillSectionInner ">
                     <div class="skillSectionHeading">My Experience</div>
                 </div>
                 <div class="skillInfoContainer timelineSectionInner">
-                    <div class="tr2 skillInfo expInfo">
+                    <div class="hidden2 skillInfo expInfo">
                         <div class="timeline">
                             <ul>
                                 <li>
@@ -221,12 +221,12 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="tr1 skillImgCont timelineImgCont">
+                    <div class="hidden3 skillImgCont timelineImgCont">
                         <img class="timelineImage" src="./assets/experience/exp.png" alt="" />
                     </div>
 
                 </div>
-                <div class=" tr1 prBTN">
+                <div class=" hidden4 prBTN">
                     <a href="#5">
                         <button class="hidebtns glassTray">
                             My Projects
@@ -238,11 +238,11 @@
 
         <div id="5" class=" timelineSection">
             <div class="timelineSectionIndiv">
-                <div class="tr3 skillSectionInner">
+                <div class="hidden skillSectionInner">
                     <div class="skillSectionHeading">My Projects</div>
                 </div>
                 <div class="skillInfoContainer flexrev">
-                    <div class="tr2 projectInfo">
+                    <div class="hidden2 projectInfo">
                         <link
                             href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap"
                             rel="stylesheet">
@@ -312,12 +312,12 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="tr1"> -->
+                    <!-- <div class="hidden3"> -->
                     <!-- <img class="timelineImage" src="./assets/experience/exp.png" alt="" /> -->
                     <!-- </div> -->
 
                 </div>
-                <div class=" tr1 prBTN">
+                <div class=" hidden3 prBTN">
                     <a href="#6">
                         <button class="hidebtns glassTray">
                             Contact Me
@@ -329,11 +329,11 @@
 
         <div id="6" class=" contactSection">
             <div class="contactIndiv">
-                <div class="tr3 connectSectionInner">
+                <div class="hidden connectSectionInner">
                     <div class="connectSectionHeading">Let's Connect</div>
                 </div>
                 <div class="connectboxContainer">
-                    <div class="tr1 ContactBox">
+                    <div class="hidden2 ContactBox">
                         <input class="ContactInputContainer" placeholder="Leave Your thoughts" type="text" />
                         <div class="prBTN">
                             <a href="#5">
@@ -343,12 +343,12 @@
                             </a>
                         </div>
                     </div>
-                    <div class="tr2 skillImgCont connectImgCont">
+                    <div class="hidden3 skillImgCont connectImgCont">
                         <img class="timelineImage connectImage" src="./assets/connect.png" alt="" />
                     </div>
 
                 </div>
-                <div class=" tr1 footerTray">
+                <div class=" hidden4 footerTray">
                     <!-- <a href="#5">
                     <button class="glassTray">
                         My Projects
@@ -388,18 +388,68 @@
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="./particle.js"></script>
     <script src="./text.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
     <script>
-        ScrollReveal({
-            reset:true,
-            distance: '50px',
-            duration: 1000, 
-            interval: 100,
-        })
-        ScrollReveal().reveal('.tr1',{origin:'left'})
-        ScrollReveal().reveal('.tr2',{origin:'right'})
-        ScrollReveal().reveal('.tr3',{origin:'bottom'})
-        ScrollReveal().reveal('.tr4',{origin:'top'})
+        // window.onscroll = function () { myFunction() };
+        function myFunction() {
+            var elements;
+            var elements2;
+            var elements3;
+            var elements4;
+            var windowHeight;
+
+            function init() {
+                elements = document.querySelectorAll('.hidden');
+                elements2 = document.querySelectorAll('.hidden2');
+                elements3 = document.querySelectorAll('.hidden3');
+                elements4 = document.querySelectorAll('.hidden4');
+                windowHeight = window.innerHeight;
+            }
+
+            function checkPosition() {
+                for (var i = 0; i < elements.length; i++) {
+                    var element1 = elements[i];
+                    var element2 = elements2[i];
+                    var element3 = elements3[i];
+                    var element4 = elements4[i];
+
+                    var positionFromTop = elements[i].getBoundingClientRect().top;
+                    var positionFromTop2 = elements2[i].getBoundingClientRect().top;
+
+                    if (positionFromTop - windowHeight <= 0) {
+                        element1.classList.add('fade-in-element');
+                        element1.classList.remove('hidden');
+                    }
+                    if (positionFromTop2 - windowHeight <= 0) {
+                        element2.classList.add('fade-in-element2');
+                        element2.classList.remove('hidden2');
+                        element3.classList.add('fade-in-element3');
+                        element3.classList.remove('hidden3');
+                        element4.classList.add('fade-in-element4');
+                        element4.classList.remove('hidden4');
+                    }
+                }
+            }
+
+            function checkPosition2() {
+                for (var i = 0; i < elements4.length; i++) {
+                    var positionFromTop4 = elements4[i].getBoundingClientRect().top;
+
+                    if (positionFromTo4 - windowHeight <= 0) {
+
+                    }
+                }
+            }
+
+            window.addEventListener('scroll', checkPosition);
+            window.addEventListener('scroll', checkPosition2);
+            window.addEventListener('resize', init);
+
+            init();
+            checkPosition();
+        }
+        // window.addEventListener('scroll', myFunction);
+        myFunction()
+
     </script>
 </body>
 
