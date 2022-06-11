@@ -44,9 +44,20 @@ a{
 .aboutMeInfo {
   width: 50%;
   padding-top: 20px;
-  font-size: 20px;
+  font-size: 19px;
 }
-
+.ProfileList > li{
+  padding: 3px;
+  
+}
+.ProfileList > li > a{
+  text-decoration: none;
+  color: white;
+}
+.ProfileList > li >a:hover{
+  color: #21f7c0;
+  transition: .4s;
+}
 .aboutImgCont {
   width: 50%;
   border-radius: 50%;
