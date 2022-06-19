@@ -191,7 +191,7 @@
                     <div class="hidden2 skillInfo expInfo">
                         <div class="timeline">
                             <ul>
-                                <li>
+                                <li onmouseenter="f1()" onmouseleave="f0()">
                                     <span>February 2021 - May 2021</span>
                                     <div class="content">
                                         <h3>Vysion Technology</h3>
@@ -201,7 +201,7 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li>
+                                <li onmouseenter="f2()" onmouseleave="f0()">
                                     <span>July 2021 - November 2021</span>
                                     <div class="content">
                                         <h3>Ideoholics</h3>
@@ -212,7 +212,7 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li>
+                                <li onmouseenter="f3()" onmouseleave="f0()">
                                     <span>June 2022 - August 2022</span>
                                     <div class="content">
                                         <h3>Northern Trust Corporation  </h3>
@@ -226,7 +226,7 @@
                         </div>
                     </div>
                     <div class="hidden3 skillImgCont timelineImgCont">
-                        <img class="timelineImage" src="./assets/experience/exp.png" alt="" />
+                        <img class="timelineImage" id="CompanyImg" src="./assets/experience/exp.png" alt="eere" />
                     </div>
 
                 </div>
@@ -438,6 +438,47 @@
             checkPosition();
         }
         myFunction()
+
+        function f0(){
+            const tImg = document.getElementById("CompanyImg")
+            // tImg.
+            console.log(tImg.src)
+            tImg.src = "./assets/experience/exp.png"
+            tImg.classList.toggle("mystyle1");
+            tImg.classList.add("mystyle2")
+
+        }
+
+        function f1(){
+            const tImg = document.getElementById("CompanyImg")
+            // tImg.
+            console.log(tImg.src)
+            tImg.src = "./assets/experience/vysion.jpg"
+            tImg.classList.toggle("mystyle2");
+            tImg.classList.toggle("mystyle1");
+            tImg.classList.add("mystyle1");
+
+        }
+        
+        function f2(){
+            const tImg = document.getElementById("CompanyImg")
+            // tImg.
+            console.log(tImg.src)
+            tImg.src = "./assets/experience/ideoholics.png"
+            tImg.classList.toggle("mystyle2");
+            tImg.classList.toggle("mystyle1");
+            tImg.classList.add("mystyle1");
+        }
+        
+        function f3(){
+            const tImg = document.getElementById("CompanyImg")
+            // tImg.
+            console.log(tImg.src)
+            tImg.src = "./assets/experience/nt.jpg"
+            tImg.classList.toggle("mystyle1");
+            tImg.classList.toggle("mystyle2");
+            tImg.classList.add("mystyle1");
+        }
 
     </script>
 </body>

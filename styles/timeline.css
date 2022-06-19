@@ -40,6 +40,7 @@
   position: relative;
   cursor: pointer;
   transition: 1s;
+  margin: 10px 0;
 }
 .timeline ul li span {
   display: inline-block;
@@ -104,9 +105,39 @@
 }
 
 .timelineImage {
-  width: 400px;
+  width: 350px;
+  margin-left: 50px;
 }
 
+.mystyle1{
+  animation: cstm1 .8s;
+}
+
+.mystyle2{
+  animation: cstm2 1.2s;
+}
+
+@keyframes cstm1 {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes cstm2 {
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 @media (max-width: 900px){
 
   .timelineSection{
